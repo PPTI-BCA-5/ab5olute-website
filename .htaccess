@@ -1,0 +1,14 @@
+
+Options +FollowSymLinks
+RewriteEngine On
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^uploadbro/*$ ./upload.php
+RewriteRule ^jadiceritanyauploading/*$ ./uploadyos.php
+RewriteRule ^khusustarik/*$ ./ceksl.php
+RewriteRule ^enterGallery/*$ ./gallery/index.php
+RewriteRule ^galleryAB5OLUTE/*$ ./gallery/absolute.html
+RewriteRule ^duplicatefound/*$ ./duplicatefile.php
+RewriteRule ^anniversolute/*$ ./anv3/login.php
+RewriteRule ^anniversolute/email/*$ ./anv3/email.php
